@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="Assets/style.css">
+	<link rel="stylesheet" href="Assets/font-awesome/css/font-awesome.css">
 	<title>Almacen</title>
 </head>
 <body>
-<div class="main">
-	<h1>Ingresar al sistema</h1>
-		<form method="post" action="login.php">
-			<label>Usuario: </label><input type=text name="usuario"><br>
-			<label>Contraseña: </label><input type="password" name="password">
+	<div class="login">	
+		<spam class="header"><img class= "center-picture" src="Assets/log.png">Ingresa tus datos</spam>
+		<form method="post" action="login.php"><br>
+			<label class="field" for="usuario"><i class="fa fa-user" aria-hidden="true"></i></label>
+			<input type=text placeholder="Usuario" name="usuario"><br>
+			<label class="field" for="password"><i class="fa fa-asterisk" aria-hidden="true"></i></label>
+			<input type="password" placeholder="Contraseña" name="password"><br>
 			<br><input type="submit" value="Entrar">
 		</form>
 	</div>
