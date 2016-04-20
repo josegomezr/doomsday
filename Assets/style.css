@@ -1,6 +1,8 @@
 body{
 	font-family: Nunito;
 	color: #424041;
+	padding: 0px;
+	margin: 0px;
 }
 
 input[type=text],
@@ -28,17 +30,28 @@ input[type=submit]{
 	font-weight: bold;
 	color: white;
 	margin: auto;
+	margin-top: 10px;
 }
 
 .header{
 	display: block;
 	text-align: center;
-	margin-top:100px;
+	margin-top:80px;
+	margin-bottom: 20px;
 	padding: 10px;
 	font-size: 2em;
 	font-weight: bolder;
-	border-top-right-radius: 8px;
-	border-top-left-radius: 8px;
+}
+
+.biggie{
+	font-size: 3em;
+	color:#4FB0C6;
+}
+
+.main_description{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bolder;
 }
 
 .field{ 
@@ -57,4 +70,29 @@ input[type=submit]{
 	margin: auto;
 	padding-bottom: 10px;
 	padding-top:0px;
+}
+
+.centerfield{
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bolder;
+	margin-top: 20px;
+}
+
+.navbar{
+	background-color: #E3DEDE;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.option{
+	width: 15%;
+	text-align: center;
+	display: inline-block;
+	`background-color: white;
+	font-size: 1.2em;
+	margin-left: 4%;
+	
 }
