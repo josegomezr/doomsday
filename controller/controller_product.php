@@ -10,10 +10,7 @@ class product{
 		load_file('view/admin/product.php', $this->view_data);
 	}
 
-	function view(){
-		//$this->viewData['row'] = $this->crud_model->find($pk)->row();
-		//$this->load->view('crud/read_view', $this->viewData);
-
+	function view($product){
 		$sql_product_view = "SELECT nombre_producto, id_producto, categoria_producto FROM producto 
 		WHERE id_producto = '{$product['id_producto']}'";
 		$this->view_data['product_view'] = Database::connect()->query($sql_product_view)->fetch_all(MYSQLI_ASSOC);
