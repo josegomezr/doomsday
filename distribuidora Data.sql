@@ -1,3 +1,5 @@
+insert into almacen values ();
+
 insert into proveedor(nombre_proveedor) values ("Sensi");
 insert into proveedor(nombre_proveedor) values ("La china");
 insert into proveedor(nombre_proveedor) values ("Farmatodo");
@@ -55,7 +57,7 @@ insert into orden_servicio(comprador) values(2);
 insert into orden_servicio(comprador) values(3);
 insert into orden_servicio(comprador) values(4);
 
-**insert into orden_servicio_contenido(orden_servicio, almacen, producto, cantidad) values (1, 1, 1, 5); 
+insert into orden_servicio_contenido(orden_servicio, almacen, producto, cantidad) values (1, 1, 1, 5); 
 insert into orden_servicio_contenido(orden_servicio, almacen, producto, cantidad) values (1, 1, 2, 5); 
 insert into orden_servicio_contenido(orden_servicio, almacen, producto, cantidad) values (2, 1, 3, 1); 
 insert into orden_servicio_contenido(orden_servicio, almacen, producto, cantidad) values (3, 1, 5, 2); 

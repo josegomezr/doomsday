@@ -1,5 +1,4 @@
 <?php
-
 function load_file($file, $context=array()){
     if(file_exists($file)){
     	extract($context);
