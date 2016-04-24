@@ -85,10 +85,12 @@ input[type=submit]{
 }
 
 .navbar{
-	background-color: #E3DEDE;
+	background-color: #424041;
+	color: #E3DEDE;
 	width: 100%;
 	height: 40px;
-	box-shadow: 10px 10px 5px #888888;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .navbar_aux{
@@ -100,7 +102,7 @@ input[type=submit]{
 	display: inline-block;
 	//background-color: white;
 	height: 40px;
-	width: 180px;
+	width: 190px;
 	font-size: 1.2em;
 	//margin-left: 5%;
 	//margin-right: 5%;
@@ -108,7 +110,7 @@ input[type=submit]{
 }
 
 .navbar_option{
-	font-size: 1.2em;
+	//font-size: 1.2em;
 	text-align: center;
 	padding-bottom: 10px;
 	padding-top:10px;
@@ -118,6 +120,7 @@ input[type=submit]{
 .navbar_selected{
 	background-color: black;
 	height: 40px;
+	border-radius: 20px;
 }
 
 a{
@@ -128,8 +131,8 @@ a{
 
 .navbar_option:hover { 
     //text-decoration: underline;
-    color: rgba(66,64,65,0.5);
-    //color: white;
+    //color: rgba(66,64,65,0.5);
+    color: white;
 }
 
 
@@ -142,8 +145,8 @@ a{
 .sidebar{
 	width: auto;
 	height: 100%;
-	background-color: #424041;
-	color: #E3DEDE;
+	background-color: #E3DEDE;
+	color: #424041;
 	float: left;
 }
 
@@ -165,8 +168,10 @@ a{
 }
 
 .selected_item{
-	background-color: black;
+	//background-color: #2196f3;
 	color: white;
+	border-left-style: solid;
+	border-left-color: blue;
 }
 
 .sidebar_section:hover { 
@@ -175,9 +180,11 @@ a{
 }
 
 .container{
-	height: 100%;
+	height: 90%;
 	background-color: white;
-	padding: 40px;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-right: 40px;
 	padding-left: 15%;
 }
 
