@@ -19,5 +19,3 @@ function show_error($title, $message){
 		"mensaje" => $message,
 	));
 }
-
- ?>

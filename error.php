@@ -7,8 +7,9 @@
 </head>
 <body>
 	<div class="centerfield">
-		<img src="assets/gan.png"><br>
+		<img src="assets/gand.png"><br>
 		<div class="biggie">You Shall not pass!</div><br>
+		<p> error... de algun tipo </p>
 	</div>
 </body>
 </html>
