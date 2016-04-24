@@ -1,3 +1,25 @@
+<?php 
+include('database.php');
+if(isset($_POST["usuario"])){
+	$usuario = $_POST["usuario"];
+	$pass = $_POST["password"];
+	if(($usuario="")||($pass="")){
+		echo "error";
+	}else{
+		$query = mysql_query("SELECT * FROM usuario WHERE login = '{$usuario}' AND clave = '{$pass}'", $connect);
+		//var_dump($query);
+		//exit; 
+		$cuenta = mysql_num_rows($query);
+		var_dump($cuenta); /*
+		if($cuenta != 1){
+			//var_dump($fila);
+			header('location: error.php');
+		}else{
+			header('location: product.php');
+		} */
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +31,8 @@
 <body>
 	<div class="login">	
 		<div class="header"><img class= "center-picture" src="Assets/log.png">Ingresa tus datos</div>
-		<?php if (isset($_GET['error']) && $_GET['error']): ?>
-			<div class="error">
-				<p align="center">Usuario no encontrado :(</p>
-			</div>
-		<?php endif ?>
-		<form method="post" action="<?php echo site_url("login","validate") ?>">
+	
+		<form method="post" action="">
 			<label class="field" for="usuario"><i class="fa fa-user" aria-hidden="true"></i></label>
 			<input type="text" placeholder="Usuario" name="usuario" id="usuario"><br>
 			<label class="field" for="password"><i class="fa fa-asterisk" aria-hidden="true"></i></label>

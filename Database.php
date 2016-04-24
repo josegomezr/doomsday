@@ -1,15 +1,7 @@
-<?php
-/**
-* 
-*/
-class Database
-{
-    public static function connect()
-    {
-        $dbHost = 'localhost';
-        $dbUser = 'root';
-        $dbPass = '';
-        $dbName = 'distribuidora';
-        return new mysqli($dbHost, $dbUser, $dbPass, $dbName, 3306);
-    }
-}
+<?php 
+$bdServer="localhost";
+$bdUser="root";
+$bdPass="";
+$bdName="distribuidora";
+$connect = @mysql_connect($bdServer,$bdUser,$bdPass);
+mysql_select_db($bdName);

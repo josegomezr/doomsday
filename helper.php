@@ -1,5 +1,5 @@
-<?php
-function load_file($file, $context=array()){
+<?php 
+function load_file($file, $context = array()){
     if(file_exists($file)){
     	extract($context);
         include ($file);
@@ -9,23 +9,15 @@ function load_file($file, $context=array()){
     }
 }
 
+function redirect($location, $message = array()){
+	header('location.'.$location);
+}
+
 function show_error($title, $message){
-	load_file("view/error.php", array(
+	load_file("error.php", array(
 		"titulo" => $title,
 		"mensaje" => $message,
 	));
-	// include ("view/error.php");
 }
 
-function redirect($location){
-    header('Location:'.$location);
-}
-
-function site_url($controller, $method ='start', $params = array()){
-    $strParam = '';
-    foreach ($params as $key => $val) {
-        $strParam .= "&$key=$val";
-    }
-    return "index.php?controller=$controller&method=$method".$strParam;
-}
-
+ ?>
