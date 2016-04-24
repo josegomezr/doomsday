@@ -32,7 +32,7 @@ if(isset($_POST["usuario"])){
 </head>
 <body>
 	<div class="login">	
-		<div class="header"><img class= "center-picture" src="Assets/log.png">Ingresa tus datos</div>
+		<div class="header"><img class= "center-picture" src="assets/log.png">Ingresa tus datos</div>
 		<div class="message"> 
 			<?php if (isset($_POST['usuario']) && $error = true): ?>
 				<p align="center">Datos incorrectos :(</p>

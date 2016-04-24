@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="assets/style.css">
-	<title>No disponible</title>
-</head>
-<body>
-	<div class="centerfield">
-		<img src="assets/art.png"><br>
+<?php include('header.php'); ?>
+<div class="box">
+    <?php include ('sidebar.php') ?>
+    <div align="center">
+    	<br>
+		<img src="assets/art.png" height="250"><br>
 		<div class="biggie">*beep boop beep*</div><br>
 		<p> esta seccion aun no esta disponible, estamos trabajando en ello </p>
-	</div>
+	 </div>
+</div>
+<?php include("footer.php") ?>
 </body>
 </html>
